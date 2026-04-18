@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin Panel"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Product to Inventory"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/pn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="e.g. Salicylic Acid"
+            android:inputType="text"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Category"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/pc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/pq"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="0"
+            android:inputType="number"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="16dp"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price (₹)"
+            android:textStyle="bold" />
+        <EditText
+            android:id="@+id/pp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:background="@android:drawable/editbox_background"
+            android:layout_marginBottom="32dp"
+            android:paddingLeft="10dp"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Add Product"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Logout"
+            android:backgroundTint="#E57373"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
